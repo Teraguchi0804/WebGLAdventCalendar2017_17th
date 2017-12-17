@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+// common
+@import "../init/import";
+@import "../init/reset"; // リセットCSS、フォントサイズ
+
+//@import "../init/";
+
+// parts
+//@import "../parts/_base/__base.scss"; //__baseを先に読み込む
+//@import "../parts/**/_*.scss";
+
+#top {
+
+  .section {
+    //position: absolute;
+    //width: 100%;
+    //height: 100%;
+    //left: 0;
+    //top: 0;
+
+    #fadeInOut {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.0;
+      z-index: 999999;
+    }
+
+
+
+  }
+
+}
+
+html{
+  height:100%;
+}
+
+body {
+  width: 100%;
+  height:100%;
+  margin: 0;
+  background-color: #000
+}
+canvas {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#sub {
+  opacity: 0.0;
+}
+
+#textureBg{
+  min-height: 100%;
+  overflow: hidden;
+  margin: 0;
+  background-color: #1f1f1f;
+
+  canvas {
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+  }
+}
