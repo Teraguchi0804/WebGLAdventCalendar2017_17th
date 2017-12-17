@@ -1,7 +1,6 @@
 precision mediump float;
 
 uniform sampler2D textureUnit;
-uniform float u_time;
 uniform float strength;
 uniform vec2 u_resolution;
 
