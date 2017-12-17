@@ -21,17 +21,13 @@ float getAnimationParam(float animationParam) {
   return pST;
 }
 
-
 void main(){
 
     vec3  destColor = vec3(0.0);
     float random = rnd(vec3(12.9898, 78.233, 151.7182), 0.0);
-//    vec2  fc = vec2(gl_FragCoord.s, 512.0 - gl_FragCoord.t);
     vec2  fc = vec2(gl_FragCoord.s, gl_FragCoord.t);
     vec2  fcc = fc - centerOffset;
     float totalWeight = 0.0;
-
-
 
     for(float i = 0.0; i <= 30.0; i++){
         float ppp = getAnimationParam(strength);
