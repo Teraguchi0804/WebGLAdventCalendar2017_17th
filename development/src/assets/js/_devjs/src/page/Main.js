@@ -7,6 +7,7 @@
  */
 
 import DisplayTop from '../Display/DisplayTop';
+import DisplayWebGLAC from '../Display/DisplayWebGLAC';
 
 'use strict';
 
@@ -26,7 +27,7 @@ export default class Main {
   onReady() {
 
     //pageページ別のIDを取得
-    var page = $('body').data('id');
+    let page = $('body').data('id');
 
     window.console.log('現在のページIDは ', page);
 
@@ -38,6 +39,12 @@ export default class Main {
         new DisplayTop();
 
         break;
+
+			case 'WebGLAC':
+
+				new DisplayWebGLAC();
+
+				break;
     }
 
   }

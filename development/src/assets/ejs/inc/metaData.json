@@ -9,19 +9,19 @@
           "img": "",
           "siteName": "",
           "tit": "",
-          "type": "website", 
+          "type": "website",
           "url": ""
-      }, 
+      },
       "keyword": "",
       "line": {
           "des": "",
           "img": "",
           "tit": "",
           "url": ""
-      }, 
+      },
       "title": "top",
       "tw": {
-          "card": "summary_large_image", 
+          "card": "summary_large_image",
           "creator": "",
           "des": "",
           "img": "",
@@ -29,5 +29,33 @@
           "tit": "",
           "url": ""
       }
+  },
+  "WebGLAC": {
+    "description": "",
+    "fb": {
+      "des": "",
+      "img": "",
+      "siteName": "",
+      "tit": "",
+      "type": "website",
+      "url": ""
+    },
+    "keyword": "",
+    "line": {
+      "des": "",
+      "img": "",
+      "tit": "",
+      "url": ""
+    },
+    "title": "top",
+    "tw": {
+      "card": "summary_large_image",
+      "creator": "",
+      "des": "",
+      "img": "",
+      "siteName": "",
+      "tit": "",
+      "url": ""
+    }
   }
 }
