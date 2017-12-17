@@ -19,9 +19,6 @@ export default class ZoomBlur extends Entry{
     this.canvas = document.getElementById('webgl-output');
 		this.canvasEl = $('#top #webgl-output');
 
-		// this.width = document.body.clientWidth;
-		// this.height = document.body.clientHeight;
-
 		this.width = 512;
 		this.height = 512;
 
@@ -59,14 +56,9 @@ export default class ZoomBlur extends Entry{
 		this.createScene();
 		this.createRenderer();
 
-		// this.loadTexture('../../../../assets/resource/img/sample.jpg', () => {
 		this.loadTexture('assets/resource/img/sample.jpg', () => {
 			this.scene.add(this.mesh);
 			this.updateStrength();
-			window.addEventListener('resize', () => {
-				// this.onResize();
-			}, false);
-			// this.onResize();
 
 			this.Update();
 		});
@@ -149,7 +141,6 @@ export default class ZoomBlur extends Entry{
 		});
 
     this.renderer.setClearColor(0xEEEEEE, 1.0);
-    // this.renderer.setPixelRatio(window.devicePixelRatio || 1);
     this.renderer.setSize(this.width, this.height);
 
   }
